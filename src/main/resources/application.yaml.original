@@ -1,12 +1,10 @@
 spring:
   datasource:
-    url: 'jdbc:mysql://dlcdb002.nallaveettil.local:3306/fhir_dhsdb_dev'
-    username: dhs
-    password: an544EV%!
-    driverClassName: com.mysql.jdbc.Driver
+    url: 'jdbc:h2:file:./target/database/h2'
+    username: sa
+    password: null
+    driverClassName: org.h2.Driver
     max-active: 15
-
-
   profiles:
     ### This is the FHIR version. Choose between, dstu2, dstu3, r4 or r5
     active: r4
